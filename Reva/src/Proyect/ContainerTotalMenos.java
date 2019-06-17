@@ -42,7 +42,7 @@ public class ContainerTotalMenos extends Container {
 
     private void iniTable() {
         Container tableInformation = new JPanel();
-        tableInformation.setBackground(Color.WHITE);
+        tableInformation.setBackground(Principal.ColorBlueSky);
         tableInformation.setLayout(new BoxLayout(tableInformation, BoxLayout.Y_AXIS));
         JLabel text = new JLabel("Registro General de Salidas");
         text.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));

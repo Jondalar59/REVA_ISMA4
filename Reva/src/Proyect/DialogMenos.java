@@ -30,7 +30,7 @@ public class DialogMenos extends JDialog {
         JPanel JPanelMenos = new JPanel();
         ContainerTotalMenos containerTotalMenos = new ContainerTotalMenos(conexion);
         JPanelMenos.add(containerTotalMenos);
-        JPanelMenos.setBackground(Color.WHITE);
+        JPanelMenos.setBackground(Principal.ColorBlueSky);
         this.add(JPanelMenos);
 
     }

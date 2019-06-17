@@ -5,7 +5,6 @@
  */
 package Proyect;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -22,6 +21,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import Proyect.Principal;
 
 /**
  *
@@ -56,7 +56,7 @@ public class ContainerTotal extends Container {
 
     private void iniTable() {
         Container tableInformation = new JPanel();
-        tableInformation.setBackground(Color.WHITE);
+        tableInformation.setBackground(Principal.ColorBlueSky);
         tableInformation.setLayout(new BoxLayout(tableInformation, BoxLayout.Y_AXIS));
         JLabel text = new JLabel("Total de Registros");
         text.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));

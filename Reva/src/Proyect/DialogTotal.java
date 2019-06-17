@@ -58,7 +58,7 @@ public class DialogTotal extends JDialog {
 
         ContainerTotal containerTotal = new ContainerTotal(conexion, this);
         JPanelPanel.add(containerTotal);
-        JPanelPanel.setBackground(Color.WHITE);
+        JPanelPanel.setBackground(Principal.ColorBlueSky);
         this.add(JPanelPanel);
     }
 
