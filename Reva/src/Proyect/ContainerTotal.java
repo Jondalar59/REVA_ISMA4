@@ -85,12 +85,9 @@ public class ContainerTotal extends Container {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 if (dataTable.getSelectedRow() != -1) {
-
                     Registros r = modelTable.getUsuario(dataTable.getSelectedRow());
-                    r.getId();
-                    String id = String.valueOf(r.getId());
                     DT.dispose();
-                    NewRegister newRegister = new NewRegister(id);
+                    NewRegister newRegister = new NewRegister(r);
                     newRegister.setVisible(true);
                     NewRegister.NuevoEditar = 1;
                 } else {

@@ -70,7 +70,7 @@ public class ContainerTotalMenos extends Container {
                         r.getString("Fecha")));
             }
         } catch (SQLException e) {
-            new Aviso("No es posible mostrar los \nregistros en la tabla").setVisible(true);
+            new Aviso("No es posible mostrar los" + "\nregistros en la tabla").setVisible(true);
             //JOptionPane.showMessageDialog(null, "No es posible mostrar los datos en la tabla");
         }
     }

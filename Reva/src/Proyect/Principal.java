@@ -90,7 +90,7 @@ public class Principal extends JFrame {
 
         JButton ButtonNew = new JButton("", new ImageIcon(icon)); // Boton uno para registrar nuevo ganado
         ButtonNew.setFont(new Font("Arial", Font.BOLD, 16));
-        ButtonNew.setBounds(500, 20, 200, 180);
+        ButtonNew.setBounds(480, 120, 200, 180);
         PanelBase.add(ButtonNew);
         String NewString = "Nuevo Registro";
         ButtonNew.setToolTipText(NewString);
@@ -110,12 +110,12 @@ public class Principal extends JFrame {
         } catch (IOException ex) {
             System.err.println("IMPOSIBLE ACCEDER AL RECURSO icono.++");
         }
-        icon2 = new ImageIcon(icon2).getImage().getScaledInstance(100, 90, Image.SCALE_DEFAULT);
+        icon2 = new ImageIcon(icon2).getImage().getScaledInstance(200, 180, Image.SCALE_DEFAULT);
 
         JButton ButtonTotal = new JButton("", new ImageIcon(icon2)); //Boton dos para acceder al registro Total
         ButtonTotal.setFont(new Font("Arial", Font.BOLD, 16));
 
-        ButtonTotal.setBounds(500, 240, 100, 90);
+        ButtonTotal.setBounds(480, 400, 200, 180);
         String TotalString = "Registro General";    // crea el mensaje de lo que hace el boton
         ButtonTotal.setToolTipText(TotalString);
 
@@ -135,12 +135,12 @@ public class Principal extends JFrame {
         } catch (IOException ex) {
             System.err.println("IMPOSIBLE ACCEDER AL RECURSO FondoMenos");
         }
-        icon4 = new ImageIcon(icon4).getImage().getScaledInstance(100, 90, Image.SCALE_DEFAULT);
+        icon4 = new ImageIcon(icon4).getImage().getScaledInstance(200, 180, Image.SCALE_DEFAULT);
 
         JButton ButtonMenos = new JButton("", new ImageIcon(icon4)); //Boton dos para acceder al registro Total
         ButtonMenos.setFont(new Font("Arial", Font.BOLD, 16));
 
-        ButtonMenos.setBounds(600, 330, 100, 90);
+        ButtonMenos.setBounds(680, 400, 200, 180);
         String MenosString = "Registro General de salidas";    // crea el mensaje de lo que hace el boton
         ButtonMenos.setToolTipText(MenosString);
 
@@ -165,7 +165,7 @@ public class Principal extends JFrame {
 
         JButton ButtonWastage = new JButton("", new ImageIcon(icon3)); //Boton tres para registrar la venta o la muerte de una vaca
         ButtonWastage.setHorizontalTextPosition(SwingConstants.CENTER);
-        ButtonWastage.setBounds(500, 470, 200, 180);
+        ButtonWastage.setBounds(680, 120, 200, 180);
         ButtonWastage.setFont(new Font("Arial", Font.BOLD, 16));
         String WastageString = "Registrar Venta o Muerte";
         ButtonWastage.setToolTipText(WastageString);
